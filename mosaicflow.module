@@ -1,0 +1,42 @@
+<?php
+/**
+ * @file
+ * Provides jQuery.mosaicflow style options for Views.
+ */
+
+/**
+ * Implements hook_init().
+ */
+
+/**
+ * Implements hook_libraries_info().
+ */
+function mosaicflow_libraries_info() {
+	$libraries['jquery.mosaicflow'] = array(
+		'name' => 'jQuery Mosaic Flow',
+		'version' => '0.2.5',
+		'vendor url' => 'http://mjco.github.io/jquery.mosaicflow/',
+		'download url' => 'http://mjco.uk/downloads/jquery.mosaicflow.zip',
+		'version arguments' => array(
+			'file' => 'mosaicflow.jquery.json',
+			'pattern' => '"version":\s+("[0-9a-zA-Z\.-]+")',
+			'lines' => 13,
+			),
+		'files' => array(
+			'js' => array('jquery.mosaicflow.min.js'),
+		),
+	);
+
+	return $libraries;
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function mosaicflow_views_api() {
+  return array(
+    'api' => 3.0,
+    'path' => drupal_get_path('module', 'mosaicflow') . '/views',
+    'template_path' => drupal_get_path('module', 'mosaicflow') . '/theme',
+  );
+}
