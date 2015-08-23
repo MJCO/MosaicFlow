@@ -1,8 +1,0 @@
-name = jQuery Mosaic Flow
-description = A Drupal module implementing jquery.mosaicflow in views
-dependencies[] = views
-dependencies[] = libraries
-package = Views
-core = 7.x
-
-files[] = views/mosaicflow_views_plugin_style.inc
