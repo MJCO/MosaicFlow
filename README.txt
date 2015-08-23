@@ -1,4 +1,4 @@
-jQuery.mosaicflow Drupal Module
+jQuery Mosaic Flow Drupal Module
 
 About
 

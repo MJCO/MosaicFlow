@@ -14,7 +14,7 @@
 <?php
 	dpm($options);
 	libraries_load('jquery.mosaicflow'); 
-	drupal_add_css(drupal_get_path('module','mosaicflow') . 'css/mosaicflow.css');
+	drupal_add_css(drupal_get_path('module','mosaicflow') . '/css/mosaicflow.css');
 
   	print ('<div class="' . $options['class'] . ' mosaicflow">');
 

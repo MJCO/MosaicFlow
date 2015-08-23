@@ -12,7 +12,7 @@ function mosaicflow_views_plugins() {
     'style' => array(
       'mosaicflow' => array(
         'title' => t('jQuery.Mosaicflow'),
-        'handler' => 'ViewsPluginStyleMosaicflow',
+        'handler' => 'mosaicflow_views_plugin_style',
         'path' => drupal_get_path('module', 'mosaicflow') . '/views',
         'type' => 'normal',
         'uses row plugin' => TRUE,
